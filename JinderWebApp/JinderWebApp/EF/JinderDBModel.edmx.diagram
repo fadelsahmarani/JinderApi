@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="226b1612464b44ef8a1dc7ce3bbb6e61" Name="Diagram1">
+        <EntityTypeShape EntityType="JinderDBModel.ChatMessage" Width="1.5" PointX="3" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="JinderDBModel.JinderUser" Width="1.5" PointX="0.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="JinderDBModel.JobPost" Width="1.5" PointX="3" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="JinderDBModel.Notification" Width="1.5" PointX="3" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="JinderDBModel.PosterExpressionLog" Width="1.5" PointX="3" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="JinderDBModel.SeekerExpressionLog" Width="1.5" PointX="5.25" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="JinderDBModel.SeekerProfile" Width="1.5" PointX="3" PointY="14.25" IsExpanded="true" />
+        <AssociationConnector Association="JinderDBModel.FK_ChatMessage_JinderUser_Receiver" ManuallyRouted="false" />
+        <AssociationConnector Association="JinderDBModel.FK_ChatMessage_JinderUser_Sender" ManuallyRouted="false" />
+        <AssociationConnector Association="JinderDBModel.FK_JobPost_JinderUser" ManuallyRouted="false" />
+        <AssociationConnector Association="JinderDBModel.FK_Notification_JinderUser" ManuallyRouted="false" />
+        <AssociationConnector Association="JinderDBModel.FK_PosterExpressionLog_Poster" ManuallyRouted="false" />
+        <AssociationConnector Association="JinderDBModel.FK_PosterExpressionLog_Seeker" ManuallyRouted="false" />
+        <AssociationConnector Association="JinderDBModel.FK_SeekerExpressionLog_JinderUser1" ManuallyRouted="false" />
+        <AssociationConnector Association="JinderDBModel.FK_SeekerProfile_JinderUser" ManuallyRouted="false" />
+        <AssociationConnector Association="JinderDBModel.FK_SeekerExpressionLog_JobPost" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

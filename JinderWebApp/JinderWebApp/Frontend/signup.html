@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup for Jinder</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="libraries/jquery-3.3.1.js"></script>
+    <script src="libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/signup.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="libraries/bootstrap/css/bootstrap.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Jinder</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active hideWhenLoggedIn" href="signup.html">Signup</a>
+                <a class="nav-item nav-link hideWhenLoggedIn" href="login.html">Login</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container form-group mt-3 mb-5">
+        <h2 class="font-weight-light">Signup for Jinder</h2>
+        <hr />
+
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" class="form-control" placeholder="Enter nick name" required />
+        </div>
+
+        <div class="form-group">
+            <label for="full_name">Full name:</label>
+            <input type="text" id="full_name" class="form-control" placeholder="Enter your real name" required />
+        </div>
+
+        <div class="form-group">
+            <label for="date_of_birth">Date of birth:</label>
+            <input type="date" id="date_of_birth" class="form-control" placeholder="Enter date of birth" />
+        </div>
+
+        <div class="form-group">
+            <label>Gender: </label>
+            <br />
+            <input type="radio" name="gender" id="male" checked />
+            <label for="male" checked>Male</label>&nbsp;
+
+            <input type="radio" name="gender" id="female" />
+            <label for="female">Female</label>&nbsp;
+        </div>
+
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <input type="text" id="address" class="form-control" placeholder="Enter your home address" />
+        </div>
+
+        <div class="form-group">
+            <label>Select your situation:</label>
+            <br />
+            <input type="radio" name="user_type" id="poster" checked />
+            <label for="poster">Job poster</label>&nbsp;
+
+            <input type="radio" name="user_type" id="seeker" />
+            <label for="seeker">Job seeker</label>&nbsp;
+            <br />
+        </div>
+
+        <div id="seekerDetailsDiv" class="form-group" style="display: none;">
+            <div class="form-group">
+                <label for="education">Education:</label>
+                <textarea id="education" class="form-control"
+                          placeholder="Tell us about your education"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="certifications">Certifications:</label>
+                <textarea id="certifications" class="form-control"
+                          placeholder="List any certifications that you have"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="skills">Skills:</label>
+                <input type="text" id="skills" class="form-control"
+                       placeholder="List of skills that you are best at" />
+            </div>
+            <div class="form-group">
+                <label for="experience">Experience:</label>
+                <textarea id="experience" class="form-control"
+                          placeholder="Your circle of experience"></textarea>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" class="form-control" required placeholder="Enter password" />
+        </div>
+
+        <div class="float-right form-group">
+            <button id="signup" class="btn btn-default">Signup</button>
+        </div>
+    </div>
+</body>
+</html>
+
